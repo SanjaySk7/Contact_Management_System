@@ -87,7 +87,7 @@ const Contacts = () => {
 
   if (sortedData.length === 0)
     return (
-      <Typography variant="h6" align="center">
+      <Typography variant="h6" align="center" margin={12}>
         No contacts available
       </Typography>
     );
