@@ -78,16 +78,11 @@ To run this project locally, follow these steps:
           - The saga file managed side effects (like fetching data from an API) asynchronously and dispatched appropriate actions.
   - By applying these best practices and doing some in-depth research on handling complex Redux architectures, I was able to successfully implement and maintain the Redux state management in the app, ensuring smooth communication between the components and the backend. 
 
-2. Pagination:
-  - Challenge: Displaying contacts with pagination to handle large datasets.
-  - Solution: Implemented Material-UI's TablePagination component to handle the pagination. The frontend is updated dynamically to show only a set number of records per page.
-
-
 ## Major Technical Decisions
 
 1. State Management with Redux Toolkit
-  - Reasoning: For this project, Redux Toolkit was chosen to manage the application state. This decision was made because Redux provides a centralized store, making it easier to manage and share state across components. The Redux Toolkit simplifies the Redux workflow with built-in reducers and actions, reducing boilerplate code.
-  - How it works: We use Redux to manage the state for the contacts, including fetching contact details, editing, updating, and deleting contacts. The state is managed globally, making it easier to propagate changes throughout the app without the need for prop drilling.
+    - Reasoning: For this project, Redux Toolkit was chosen to manage the application state. This decision was made because Redux provides a centralized store, making it easier to manage and share state across components. The Redux Toolkit simplifies the Redux workflow with built-in reducers and actions, reducing boilerplate code.
+    - How it works: We use Redux to manage the state for the contacts, including fetching contact details, editing, updating, and deleting contacts. The state is managed globally, making it easier to propagate changes throughout the app without the need for prop drilling.
 
 2. MongoDB as the Database
    - Reasoning: MongoDB was chosen due to its flexible schema and scalability. It’s a NoSQL database, making it ideal for handling unstructured data like contact information, which can vary between entries.
